@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+
+    
+    .wrapper {
+        display: flex;
+        height: 100vh;
+    
+    }
+    
+    .card-section {
+        background-color:  hsl(278, 68%, 11%);
+        width: 30%;
+        color:   hsl(270, 3%, 87%);
+    }   
+    
+    .front{
+        margin: 30%;
+        width: 100%;
+        padding: 10%;
+        border-radius: 1.5rem;
+    }
+    
+    .front {
+        background-image: url(bg-card-front.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    
+    .logo {
+        margin-bottom: 2rem;
+    }
+    
+    #cardnumber {
+        margin-bottom: 1rem;
+    }
+    
+    .nameanddate{
+        display: flex;
+        gap: 5%;
+        font-size: medium;
+        font-weight: bolder;
+    }
+    
+    #name{
+        width: 100%;
+    
+    }
+    
+    #expirydate {
+        right: 0;
+    }
+    
+    .back {
+        margin-top: -80px;
+        background-image: url(bg-card-back.png);
+        margin-left: 50%;
+        padding-top: 5%;
+        width: 100%;
+        height: 200px;
+        border-radius: 0.7rem;
+    }
+    
+    
+    #cvc {
+        display: flex;
+        position: relative;
+        bottom: -87px;
+        padding-left: 55%;
+    }
+    
+    .form-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-left: 15%;
+    }
+    
+    label {
+        font-size: larger;
+    }
+    
+    input {
+        margin-top: 5px;
+        width: 70%;
+        height: 2rem;
+        border-radius: 0.5rem;
+        border: 1px solid hsl(270, 3%, 87%);
+    }
+    
+    .yymm {
+        display: flex;
+        gap: 5%;
+    }
+    
+    #cvclabel {
+        float: right;
+    }
+    
+    #yy,#mm {
+        width: 4rem;
+    }
+    
+    #yy::placeholder, #mm::placeholder {
+        padding: 15px;
+    }
+    
+    .cvcnumber {
+        float: inline-start;
+    }
+    
+    #confirm {
+        width: 100%;
+    }
+    
+    #success-page {
+        display: none;
+        margin: 15% 25%;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    #success-page>h1 {
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+    }
+    
+    
+    #continue {
+        width: 100%;
+        height: 2rem;
+        background-color: hsl(278, 68%, 11%);
+        color: white;
+        margin-top: 1.5rem;
+        padding-top: 10%;
+        padding-bottom: 15%;
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+    .card-section {
+        background-color:  hsl(278, 68%, 11%);
+        padding:  5%;
+        color: white;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20rem;
+    }
+
+    .back, .front {
+        width: 90%;
+        height: 15rem;
+        border-radius: 1rem;
+    }
+
+    .front {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-image: url(bg-card-front.png);
+        justify-content: space-evenly;
+        padding: 5%;
+        margin-top: -26.5rem;
+    }
+    .nameanddate {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .back {
+        background: url(bg-card-back.png);
+        background-repeat: no-repeat;
+        margin-left: auto;
+    }
+
+    #cvc {
+        display: flex;
+        position: relative;
+        bottom: -100px;
+        padding-left: 55%;
+    }
+    .form-section {
+        text-transform: uppercase;
+    }
+    #success-page {
+        display: none;
+    }
+    label {
+        display: block;
+        color: hsl(278, 68%, 11%);
+        font-size: x-large;
+        margin: 1%;
+    }
+    #cardnumber {
+        padding: 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .front {
+        width: 60%;
+    }
+}
